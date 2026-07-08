@@ -399,6 +399,35 @@
     font-family: var(--font-sans);
   }
 
+  /* ─── About page: bio text left, photo in its own right column ──── */
+  .about-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .about-layout .prose {
+    flex: 1;
+    min-width: 0;
+  }
+  .about-layout .profile {
+    flex-shrink: 0;
+  }
+  .about-layout .profile.float-right {
+    margin-left: 0;
+  }
+  @media (max-width: 575px) {
+    .about-layout {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .about-layout .profile {
+      text-align: center;
+    }
+    .about-layout .profile img {
+      margin-inline: auto;
+    }
+  }
+
   /* ─── Profile (matches al-folio .profile) ────────────────────────── */
   .profile {
     width: 100%;

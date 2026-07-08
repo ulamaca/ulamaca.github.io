@@ -63,14 +63,12 @@ const renderedAnnouncements = await Promise.all(
     </header>
 
     <article>
-      <!-- Profile photo (floats right by default) -->
-      <ProfilePhoto align="right" />
-
-      <div class="clearfix">
-        <!-- Bio content from about.mdx -->
+      <!-- Two-column layout: bio text left, profile photo right -->
+      <div class="about-layout">
         <div class="prose max-w-none">
           <AboutContent />
         </div>
+        <ProfilePhoto align="right" />
       </div>
 
       <!-- Social icons -->
