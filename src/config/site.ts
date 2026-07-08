@@ -32,10 +32,11 @@ export const site = {
   // ─── Identity ──────────────────────────────────────────────────────────────
 
   /** Site title. Shown in the browser tab and navbar. */
-  title: 'Albert Einstein',
+  title: 'Kuan-Chun Lee',
 
   /** Site description. Used in meta tags. */
-  description: 'A simple, clean, and responsive Astro template for academics. Powered by as-folio.',
+  description:
+    'Kuan-Chun Lee — machine learning engineer working on ML and optimization for computational design, from drug discovery to circuit design.',
 
   /** Language code for the site. */
   lang: 'en',
@@ -44,10 +45,10 @@ export const site = {
 
   author: {
     /** Full name shown in navbar, about page heading, and footer. */
-    name: 'Albert Einstein',
+    name: 'Kuan-Chun Lee',
 
     /** Short email address (used in social links). */
-    email: 'einstein@example.com',
+    email: 'ulamaca.lee@gmail.com',
 
     /** Path to profile photo. Place image in public/assets/img/. */
     avatar: '/assets/img/profile.jpg',
@@ -56,18 +57,13 @@ export const site = {
      * Subtitle below your name on the about page.
      * HTML is supported.
      */
-    subtitle: `Theoretical Physicist
-      &nbsp;·&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Institute_for_Advanced_Study">Institute for Advanced Study</a>,
-      Princeton`,
+    subtitle: `Senior Machine Learning Engineer`,
 
     /**
      * Address block below profile photo.
      * HTML is supported.
      */
-    moreInfo: `<p>Institute for Advanced Study</p>
-      <p>Einstein Drive</p>
-      <p>Princeton, NJ 08540</p>`,
+    moreInfo: `<p>Zhubei City, Taiwan</p>`,
   },
 
   // ─── Social links ──────────────────────────────────────────────────────────
@@ -79,25 +75,25 @@ export const site = {
   //   bluesky_handle, medium_username, cv_pdf, rss_icon
 
   socials: {
-    email: 'einstein@example.com',
+    email: 'ulamaca.lee@gmail.com',
     x_username: undefined as string | undefined,
-    linkedin_username: undefined as string | undefined,
-    github_username: undefined as string | undefined,
+    linkedin_username: 'kuan-chun-l-a7745560' as string | undefined,
+    github_username: 'ulamaca' as string | undefined,
     gitlab_username: undefined as string | undefined,
     /** Google Scholar user ID — the part after user= in your Scholar URL */
-    scholar_userid: 'qc6CJjYAAAAJ',
+    scholar_userid: undefined as string | undefined,
     orcid_id: undefined as string | undefined,
     /** Inspire HEP author ID */
-    inspire_id: '1010907',
+    inspire_id: undefined as string | undefined,
     researchgate_username: undefined as string | undefined,
     arxiv_id: undefined as string | undefined,
     youtube_id: undefined as string | undefined,
     instagram_username: undefined as string | undefined,
     mastodon_url: undefined as string | undefined,
     bluesky_handle: undefined as string | undefined,
-    medium_username: undefined as string | undefined,
+    medium_username: 'UlamacaLEE' as string | undefined,
     /** Path to CV PDF in public/assets/pdf/ */
-    cv_pdf: '/assets/pdf/example_pdf.pdf',
+    cv_pdf: undefined as string | undefined,
     /** Show RSS icon in social links */
     rss_icon: true,
   },
@@ -162,8 +158,8 @@ export const site = {
 
   blog: {
     /** Name shown in the blog page heading. */
-    name: 'as-folio',
-    description: 'A simple, clean, and responsive Astro template for academics.',
+    name: 'Blog',
+    description: 'Notes on machine learning, optimization, and computational design.',
     /** Number of posts per page. */
     postsPerPage: 5,
     /**
