@@ -301,18 +301,19 @@
   .header-bar {
     border-bottom: 1px solid var(--global-divider-color);
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
   }
   .header-bar h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 2rem;
     font-family: var(--font-sans);
     font-weight: 700;
   }
   .header-bar h2 {
     color: var(--global-text-color-light);
-    font-size: 1.25rem;
+    font-size: 1rem;
+    margin-top: 0.25rem;
   }
   .tag-category-list {
     border-bottom: 1px solid var(--global-divider-color);
