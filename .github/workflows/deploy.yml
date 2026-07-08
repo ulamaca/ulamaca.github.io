@@ -36,7 +36,7 @@ jobs:
           # ASTRO_SITE: site origin, e.g. https://username.github.io
           # ASTRO_BASE: project-page base path, e.g. /repo-name (leave empty for user/org pages)
           # The fallbacks below are only for this template repository's own deployment.
-          ASTRO_SITE: ${{ vars.ASTRO_SITE || 'https://https://github.com/ulamaca/kuanlee.github.io.git.github.io' }}
+          ASTRO_SITE: ${{ vars.ASTRO_SITE || 'https://ulamaca.github.io' }}
           ASTRO_BASE: ${{ vars.ASTRO_BASE || '' }}
 
       - name: Commit updated citations.yml
