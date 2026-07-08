@@ -18,6 +18,9 @@ import React from 'react';
 import satori from 'satori';
 
 // Load fonts once at module level (build-time only — never runs in the browser)
+// Buffers must be copied to their own ArrayBuffer: readFileSync buffers can be
+// slices of Node's shared allocation pool, so `buf.buffer` may point at a pool
+// region that other unrelated reads overwrite before satori consumes it later.
 const fontRoot = resolve('node_modules/@fontsource/roboto/files');
 const fontRegular = readFileSync(resolve(fontRoot, 'roboto-latin-400-normal.woff'));
 const fontBold = readFileSync(resolve(fontRoot, 'roboto-latin-700-normal.woff'));
@@ -25,13 +28,13 @@ const fontBold = readFileSync(resolve(fontRoot, 'roboto-latin-700-normal.woff'))
 const FONTS = [
   {
     name: 'Roboto',
-    data: fontRegular.buffer as ArrayBuffer,
+    data: new Uint8Array(fontRegular).buffer,
     weight: 400 as const,
     style: 'normal' as const,
   },
   {
     name: 'Roboto',
-    data: fontBold.buffer as ArrayBuffer,
+    data: new Uint8Array(fontBold).buffer,
     weight: 700 as const,
     style: 'normal' as const,
   },
