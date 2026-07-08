@@ -120,17 +120,6 @@ export const site = {
       { label: 'about', href: '/' },
       { label: 'blog', href: '/blog/' },
       { label: 'publications', href: '/publications/' },
-      { label: 'projects', href: '/projects/' },
-      { label: 'repositories', href: '/repositories/' },
-      { label: 'cv', href: '/cv/' },
-      {
-        label: 'more',
-        children: [
-          { label: 'teaching', href: '/teaching/' },
-          { label: 'people', href: '/people/' },
-          { label: 'books', href: '/books/' },
-        ],
-      },
     ] as NavItem[],
   },
 
@@ -181,7 +170,7 @@ export const site = {
      * Tags shown as badges on the blog listing page header.
      * Users can click them to filter posts by tag.
      */
-    displayTags: ['formatting', 'images', 'links', 'math', 'code', 'blockquotes'],
+    displayTags: [] as string[],
     /** Categories shown as badges on the blog listing page header. */
     displayCategories: [] as string[],
     /**
@@ -205,7 +194,7 @@ export const site = {
 
   announcements: {
     /** Show news/announcements section on the about page. */
-    enabled: true,
+    enabled: false,
     /** Enable vertical scroll if more than 3 items. */
     scrollable: true,
     /** Max news items to show (undefined = show all). */
@@ -214,14 +203,14 @@ export const site = {
 
   latestPosts: {
     /** Show latest blog posts section on the about page. */
-    enabled: true,
+    enabled: false,
     scrollable: true,
     limit: 3 as number | undefined,
   },
 
   selectedPapers: {
     /** Show selected publications section on the about page. */
-    enabled: true,
+    enabled: false,
   },
 
   // ─── Features ─────────────────────────────────────────────────────────────
@@ -230,15 +219,15 @@ export const site = {
     /** Enable dark/light mode toggle in navbar. */
     darkmode: true,
     /** Enable ⌘K search. */
-    search: true,
+    search: false,
     /** Enable reading progress bar on blog posts. */
-    progressBar: true,
+    progressBar: false,
     /** Show back-to-top button. */
     backToTop: true,
     /** Enable automatic masonry layout for project cards. */
-    masonry: true,
+    masonry: false,
     /** Enable click-to-zoom on images (medium-zoom). */
-    mediumZoom: true,
+    mediumZoom: false,
     /** Show styled CSS tooltips on hover for project card icons and publication annotations.
      *  When false, the browser's native title-attribute tooltip is used instead. */
     tooltips: false,
@@ -257,7 +246,7 @@ export const site = {
      */
     viewTransitions: true,
     /** Show social sharing links (X, LinkedIn, Facebook, email) at the bottom of blog posts. */
-    socialShare: true,
+    socialShare: false,
   },
 
   // ─── Giscus comments ──────────────────────────────────────────────────────
