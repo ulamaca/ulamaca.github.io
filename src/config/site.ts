@@ -57,7 +57,9 @@ export const site = {
      * Subtitle below your name on the about page.
      * HTML is supported.
      */
-    subtitle: `Senior Machine Learning Engineer`,
+    subtitle: `LLM Agent Forward Deployed Engineer, MediaTek
+      &nbsp;·&nbsp;
+      PhD Student, NYCU`,
 
     /**
      * Address block below profile photo.
